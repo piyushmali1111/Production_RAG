@@ -3,3 +3,9 @@ langchain-core
 langchain-google-genai
 google-generativeai
 python-dotenv
+streamlit
+transformers
+requests
+chromadb
+Langchain-chroma
+pdfminer.six
