@@ -2,11 +2,11 @@ from langchain_community.document_loaders import PyPDFLoader, DirectoryLoader ,P
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_google_genai import ChatGoogleGenerativeAI , GoogleGenerativeAIEmbeddings
 from langchain_chroma import Chroma
-from constant import CHROMA_SETTINGS 
+from dotenv import load_dotenv
+load_dotenv()
 import os 
 
 persist_directory = 'db'
-
 
 def main():
     documents = []
@@ -34,7 +34,6 @@ def main():
     documents=chunks,
     embedding=embedding_model,
     persist_directory=persist_directory,
-    client_settings = CHROMA_SETTINGS
     )
 
 if __name__ == "__main__":
