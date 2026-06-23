@@ -1,6 +1,6 @@
-from langchain_community.document_loaders import PyPDFLoader, DirectoryLoader ,PDFMinerLoader
+from langchain_community.document_loaders import  PDFMinerLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_google_genai import ChatGoogleGenerativeAI , GoogleGenerativeAIEmbeddings
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_chroma import Chroma
 from dotenv import load_dotenv
 load_dotenv()
