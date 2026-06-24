@@ -5,7 +5,6 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import PromptTemplate
 from dotenv import load_dotenv
 
-
 load_dotenv()
 
 user_query = input("Enter the query:")
@@ -57,5 +56,3 @@ result = chain.invoke(
     {'user_query':user_query,
     'context':context}
     )
-
-print(result)
